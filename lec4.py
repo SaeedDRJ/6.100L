@@ -5,7 +5,7 @@ Created on Mon Oct 19 17:08:16 2026
 @author: darij
 """
 
-# for i in range(10):
+# for i in range(5, 6):
 #     if i % 2 == 0:
 #         print(i)
         
@@ -22,17 +22,25 @@ Created on Mon Oct 19 17:08:16 2026
 #     if char in 'iu':
 #         print("There is an i or u")
 
-an_letters = "aefhilmnorsxAEFHILMNORSX"
-word = input("I will cheer for you! Enter a word: ")
-times = int(input("Enthusiasm level (1-10): "))
+# an_letters = "aefhilmnorsxAEFHILMNORSX"
+# word = input("I will cheer for you! Enter a word: ")
+# times = int(input("Enthusiasm level (1-10): "))
 
-for w in word:
-    if w in an_letters:
-        #print(f'Give me an {c} : {c}') # with f-strings
-        print("Give me an " + w + ": " + w)
-    else:
-        #print(f'Give me a {c} : {c}') # with f-strings
-        print("Give me a " + w + ": " + w)
-print("What does that spell? ")
-for i in range(times):
-    print(word, "!!!")
+# for w in word:
+#     if w in an_letters:
+#         #print(f'Give me an {c} : {c}') # with f-strings
+#         print("Give me an " + w + ": " + w)
+#     else:
+#         #print(f'Give me a {c} : {c}') # with f-strings
+#         print("Give me a " + w + ": " + w)
+# print("What does that spell? ")
+# for i in range(times):
+#     print(word, "!!!")
+
+
+s = "aaaaaaaaaabcaaaa"
+seen = ""
+for char in s:
+    if char not in seen:
+        seen += char
+print(len(seen))
